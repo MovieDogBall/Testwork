@@ -1,0 +1,28 @@
+{
+    "name": "core/yii2-base",
+    "description": "The base extension of Yii2-test application.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "base", "core", "start", "Yii2-test"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Kashyrin Yaroslav",
+            "email": "neyasetwitcher@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/core/yii2-base/issues?state=open",
+        "source": "https://github.com/core/yii2-base"
+    },
+    "require": {
+        "core/Yii2-test": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "core\\base\\": ""
+        }
+    },
+    "extra": {
+        "bootstrap": "core\\base\\Bootstrap"
+    }
+}

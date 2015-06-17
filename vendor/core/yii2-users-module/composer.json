@@ -1,0 +1,32 @@
+{
+    "name": "core/yii2-users-module",
+    "description": "The users module for Yii2-test application.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "users", "user", "module", "modules", "account", "management", "profile", "profiles", "Yii2-test"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Kashyrin Yaroslav",
+            "email": "neyasetwitcher@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/core/yii2-users-module/issues?state=open",
+        "source": "https://github.com/core/yii2-users-module"
+    },
+    "require": {
+        "yiisoft/yii2-swiftmailer": "*",
+        "yiisoft/yii2-bootstrap": "*",
+        "core/Yii2-test": "*",
+        "core/Yii2-test-rbac-module": "*",
+        "core/yii2-fileapi-widget": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "core\\users\\": ""
+        }
+    },
+    "extra": {
+        "bootstrap": "core\\users\\Bootstrap"
+    }
+}

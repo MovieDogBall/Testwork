@@ -1,0 +1,25 @@
+{
+    "name": "core/yii2-themes",
+    "description": "The themes extension for Yii2-test application.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "themes", "template", "start", "Yii2-test"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Kashyrin Yaroslav",
+            "email": "neyasetwitcher@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/core/yii2-themes/issues?state=open",
+        "source": "https://github.com/core/yii2-themes"
+    },
+    "autoload": {
+        "psr-4": {
+            "core\\themes\\": ""
+        }
+    },
+    "extra": {
+        "bootstrap": "core\\themes\\Bootstrap"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "core/yii2-rbac-module",
+    "description": "The RBAC module for Yii2-test application.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "rbac", "module", "modules", "management"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Kashyrin Yaroslav",
+            "email": "neyasetwitcher@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/core/yii2-rbac-module/issues?state=open",
+        "source": "https://github.com/core/yii2-rbac-module"
+    },
+    "require": {
+        "yiisoft/yii2": "*",
+        "core/yii2-select2-widget": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "core\\rbac\\": ""
+        }
+    },
+    "extra": {
+        "bootstrap": "core\\rbac\\Bootstrap"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "core/yii2-admin-module",
+    "description": "The admin module for Yii2-test application.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "admin", "module", "modules", "start", "Yii2-test"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Kashyrin Yaroslav",
+            "email": "neyasetwitcher@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/core/yii2-admin-module/issues?state=open",
+        "source": "https://github.com/core/yii2-admin-module"
+    },
+    "require": {
+        "core/Yii2-test": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "core\\admin\\": ""
+        }
+    },
+    "extra": {
+        "bootstrap": "core\\admin\\Bootstrap"
+    }
+}

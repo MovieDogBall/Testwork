@@ -1,0 +1,26 @@
+{
+    "name": "core/yii2-fileapi-widget",
+    "description": "The FileAPI widget for Yii2 framework.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "fileapi", "upload", "files", "widget", "multiupload"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Kashyrin Yaroslav",
+            "email": "neyasetwitcher@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/core/yii2-fileapi-widget/issues?state=open",
+        "source": "https://github.com/core/yii2-fileapi-widget"
+    },
+    "require": {
+        "yiisoft/yii2": "*",
+        "rubaxa/fileapi": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "core\\fileapi\\": ""
+        }
+    }
+}
