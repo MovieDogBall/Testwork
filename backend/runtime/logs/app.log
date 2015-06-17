@@ -1,0 +1,1065 @@
+2015-06-15 21:10:14 [127.0.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class work\admin\Module does not exist' in C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\di\Container.php:415
+Stack trace:
+#0 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\di\Container.php(415): ReflectionClass->__construct('work\\admin\\Modu...')
+#1 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\di\Container.php(358): yii\di\Container->getDependencies('work\\admin\\Modu...')
+#2 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('work\\admin\\Modu...', Array, Array)
+#3 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('work\\admin\\Modu...', Array, Array)
+#4 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject(Array, Array)
+#5 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Module.php(511): yii\base\Module->getModule('admin')
+#6 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('admin/default/i...')
+#7 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('admin/default/i...', Array)
+#8 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\OpenServer\domains\yii2.vova.com\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2015-06-15 21:10:14 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '8b66f540912936675853b9a3c36f58b6811d910259016949506bf4208885a1bba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5oXSKsl-yXAjUhjicmjhrt9xhnJoLHlq\";}'
+    'PHPSESSID' => '4bvrtvr77282552e2ououlpnj0'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.vova.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=8b66f540912936675853b9a3c36f58b6811d910259016949506bf4208885a1bba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225oXSKsl-yXAjUhjicmjhrt9xhnJoLHlq%22%3B%7D; PHPSESSID=4bvrtvr77282552e2ououlpnj0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'yii2.vova.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2.vova.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2.vova.com/backend/web/index.php'
+    'REMOTE_PORT' => '15802'
+    'REDIRECT_URL' => '/backend/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434391814.47
+    'REQUEST_TIME' => 1434391814
+    'argv' => []
+    'argc' => 0
+]
+2015-06-15 21:10:51 [127.0.0.1][1][4bvrtvr77282552e2ououlpnj0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Module' not found' in C:\OpenServer\domains\yii2.vova.com\vendor\core\Yii2-test-rbac-module\views\backend\permissions\index.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-06-15 21:10:51 [127.0.0.1][1][4bvrtvr77282552e2ououlpnj0][info][application] $_COOKIE = [
+    'PHPSESSID' => '4bvrtvr77282552e2ououlpnj0'
+    '_csrf' => '9c9437c8fedcd0f721393a425591790207314630396d372bee26ff978038fe72a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"K_rpjJCfZVw5Kr22Dxxax-8gigG6sym-\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.vova.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii2.vova.com/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=4bvrtvr77282552e2ououlpnj0; _csrf=9c9437c8fedcd0f721393a425591790207314630396d372bee26ff978038fe72a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22K_rpjJCfZVw5Kr22Dxxax-8gigG6sym-%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'yii2.vova.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2.vova.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2.vova.com/backend/web/index.php'
+    'REMOTE_PORT' => '15831'
+    'REDIRECT_URL' => '/backend/web/rbac/permissions/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/rbac/permissions/index/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434391851.241
+    'REQUEST_TIME' => 1434391851
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 10:40:08 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "users/default/index".' in C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('users/default/i...', Array)
+#1 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\yii2.vova.com\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\yii2.vova.com\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2015-06-16 10:40:08 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'u68p0rbvo3g2gnk4k1lm1cj7h4'
+    '_csrf' => '84d30bf41031a074c4f45a3d85a77299c6d8cd5e7e4f6ad7c72ec85eb698f533a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"w4vhm5C56EnFfOq4ouE_9ft67NRNzGHp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.vova.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii2.vova.com/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=u68p0rbvo3g2gnk4k1lm1cj7h4; _csrf=84d30bf41031a074c4f45a3d85a77299c6d8cd5e7e4f6ad7c72ec85eb698f533a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22w4vhm5C56EnFfOq4ouE_9ft67NRNzGHp%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'yii2.vova.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2.vova.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2.vova.com/backend/web/index.php'
+    'REMOTE_PORT' => '39451'
+    'REDIRECT_URL' => '/backend/web/users/default/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/users/default/index/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434440408.399
+    'REQUEST_TIME' => 1434440408
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 10:40:10 [127.0.0.1][1][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "users/default/index".' in C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('users/default/i...', Array)
+#1 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OpenServer\domains\yii2.vova.com\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OpenServer\domains\yii2.vova.com\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2015-06-16 10:40:10 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'u68p0rbvo3g2gnk4k1lm1cj7h4'
+    '_csrf' => '281f6fd52a1ba3d16f8a574cb79c19ab928c678effd0b8c61f748c7f73f38d72a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zlnPRcxxYn8_gv1hMWZzJjWV8KZ4ZO5P\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.vova.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii2.vova.com/backend/users/default/index/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=u68p0rbvo3g2gnk4k1lm1cj7h4; _csrf=281f6fd52a1ba3d16f8a574cb79c19ab928c678effd0b8c61f748c7f73f38d72a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zlnPRcxxYn8_gv1hMWZzJjWV8KZ4ZO5P%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'yii2.vova.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2.vova.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2.vova.com/backend/web/index.php'
+    'REMOTE_PORT' => '39451'
+    'REDIRECT_URL' => '/backend/web/users/default/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/users/default/index/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434440410.551
+    'REQUEST_TIME' => 1434440410
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 12:17:54 [127.0.0.1][1][ih3vn5ej9e1gfntn2k393ojn67][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Module' not found' in C:\OpenServer\domains\yii2.vova.com\vendor\core\Yii2-test-rbac-module\views\backend\permissions\index.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-06-16 12:17:54 [127.0.0.1][1][ih3vn5ej9e1gfntn2k393ojn67][info][application] $_COOKIE = [
+    '_csrf' => '73929ecf62e705de3d6bad0fc2cb201f15ca1df283e7fc408a74ebc161b3138ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qmtKilpOOWjI8h-8sJrENkdUHuZDsaP_\";}'
+    'PHPSESSID' => 'ih3vn5ej9e1gfntn2k393ojn67'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/default/captcha' => 'fohejxb'
+    '__captcha/site/default/captchacount' => 1
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.vova.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii2.vova.com/backend/users/default/index/?UserSearch%5Busername%5D=&UserSearch%5Bemail%5D=&UserSearch%5Bname%5D=&UserSearch%5Bsurname%5D=&UserSearch%5Bstatus_id%5D=&UserSearch%5Brole%5D=&UserSearch%5Bcreated_at%5D=&UserSearch%5Bupdated_at%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=73929ecf62e705de3d6bad0fc2cb201f15ca1df283e7fc408a74ebc161b3138ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qmtKilpOOWjI8h-8sJrENkdUHuZDsaP_%22%3B%7D; PHPSESSID=ih3vn5ej9e1gfntn2k393ojn67'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'yii2.vova.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2.vova.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2.vova.com/backend/web/index.php'
+    'REMOTE_PORT' => '41557'
+    'REDIRECT_URL' => '/backend/web/rbac/permissions/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/rbac/permissions/index/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434446274.526
+    'REQUEST_TIME' => 1434446274
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 12:18:03 [127.0.0.1][1][ih3vn5ej9e1gfntn2k393ojn67][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Module' not found' in C:\OpenServer\domains\yii2.vova.com\vendor\core\Yii2-test-rbac-module\views\backend\roles\index.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-06-16 12:18:03 [127.0.0.1][1][ih3vn5ej9e1gfntn2k393ojn67][info][application] $_COOKIE = [
+    '_csrf' => '73929ecf62e705de3d6bad0fc2cb201f15ca1df283e7fc408a74ebc161b3138ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qmtKilpOOWjI8h-8sJrENkdUHuZDsaP_\";}'
+    'PHPSESSID' => 'ih3vn5ej9e1gfntn2k393ojn67'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/default/captcha' => 'fohejxb'
+    '__captcha/site/default/captchacount' => 1
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.vova.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii2.vova.com/backend/users/default/index/?UserSearch%5Busername%5D=&UserSearch%5Bemail%5D=&UserSearch%5Bname%5D=&UserSearch%5Bsurname%5D=&UserSearch%5Bstatus_id%5D=&UserSearch%5Brole%5D=&UserSearch%5Bcreated_at%5D=&UserSearch%5Bupdated_at%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=73929ecf62e705de3d6bad0fc2cb201f15ca1df283e7fc408a74ebc161b3138ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qmtKilpOOWjI8h-8sJrENkdUHuZDsaP_%22%3B%7D; PHPSESSID=ih3vn5ej9e1gfntn2k393ojn67'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'yii2.vova.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2.vova.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2.vova.com/backend/web/index.php'
+    'REMOTE_PORT' => '41560'
+    'REDIRECT_URL' => '/backend/web/rbac/roles/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/rbac/roles/index/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434446283.481
+    'REQUEST_TIME' => 1434446283
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 12:19:05 [127.0.0.1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#8 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('admin/default/i...', Array)
+#9 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\OpenServer\domains\yii2.vova.com\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2015-06-16 12:19:05 [127.0.0.1][2][-][info][application] $_COOKIE = [
+    '_csrf' => '36bcbaa7967d75a63f23b8da90fe16588d99cdf212c6d1ca423bf493e1b0af65a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EjrlgQFP6QTyIreFhrq71Wgm9efeRgay\";}'
+    'PHPSESSID' => '0jr7s6rfj1si12hfeq79fj1ta4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.vova.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=36bcbaa7967d75a63f23b8da90fe16588d99cdf212c6d1ca423bf493e1b0af65a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EjrlgQFP6QTyIreFhrq71Wgm9efeRgay%22%3B%7D; PHPSESSID=0jr7s6rfj1si12hfeq79fj1ta4'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'yii2.vova.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2.vova.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2.vova.com/backend/web/index.php'
+    'REMOTE_PORT' => '41583'
+    'REDIRECT_URL' => '/backend/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434446345.796
+    'REQUEST_TIME' => 1434446345
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 12:19:46 [127.0.0.1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#8 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('users/default/u...', Array)
+#9 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\OpenServer\domains\yii2.vova.com\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2015-06-16 12:19:45 [127.0.0.1][2][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '0jr7s6rfj1si12hfeq79fj1ta4'
+    '_csrf' => '8509661fc7b10bf2da4ed1d229ce43c06f09962ab70ea31714460255173654faa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"19HQXTDFFStWMcIULKmIxnBul8veM_Fs\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.vova.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii2.vova.com/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=0jr7s6rfj1si12hfeq79fj1ta4; _csrf=8509661fc7b10bf2da4ed1d229ce43c06f09962ab70ea31714460255173654faa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2219HQXTDFFStWMcIULKmIxnBul8veM_Fs%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'yii2.vova.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2.vova.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2.vova.com/backend/web/index.php'
+    'REMOTE_PORT' => '41605'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => '/backend/web/users/default/update/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/backend/users/default/update/?id=2'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434446385.969
+    'REQUEST_TIME' => 1434446385
+    'argv' => [
+        0 => 'id=2'
+    ]
+    'argc' => 1
+]
+2015-06-16 12:19:54 [127.0.0.1][1][imnelp8ch6m4rmddikeakrpej0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Module' not found' in C:\OpenServer\domains\yii2.vova.com\vendor\core\Yii2-test-rbac-module\views\backend\permissions\index.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-06-16 12:19:54 [127.0.0.1][1][imnelp8ch6m4rmddikeakrpej0][info][application] $_COOKIE = [
+    '_csrf' => '8509661fc7b10bf2da4ed1d229ce43c06f09962ab70ea31714460255173654faa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"19HQXTDFFStWMcIULKmIxnBul8veM_Fs\";}'
+    'PHPSESSID' => 'imnelp8ch6m4rmddikeakrpej0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.vova.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii2.vova.com/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=8509661fc7b10bf2da4ed1d229ce43c06f09962ab70ea31714460255173654faa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2219HQXTDFFStWMcIULKmIxnBul8veM_Fs%22%3B%7D; PHPSESSID=imnelp8ch6m4rmddikeakrpej0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'yii2.vova.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2.vova.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2.vova.com/backend/web/index.php'
+    'REMOTE_PORT' => '41605'
+    'REDIRECT_URL' => '/backend/web/rbac/permissions/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/rbac/permissions/index/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434446394.022
+    'REQUEST_TIME' => 1434446394
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 12:20:49 [127.0.0.1][1][imnelp8ch6m4rmddikeakrpej0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Module' not found' in C:\OpenServer\domains\yii2.vova.com\vendor\core\Yii2-test-rbac-module\views\backend\permissions\update.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-06-16 12:20:48 [127.0.0.1][1][imnelp8ch6m4rmddikeakrpej0][info][application] $_GET = [
+    'name' => 'deleteUsers'
+]
+
+$_COOKIE = [
+    '_csrf' => '8509661fc7b10bf2da4ed1d229ce43c06f09962ab70ea31714460255173654faa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"19HQXTDFFStWMcIULKmIxnBul8veM_Fs\";}'
+    'PHPSESSID' => 'imnelp8ch6m4rmddikeakrpej0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.vova.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii2.vova.com/backend/rbac/permissions/index/?page=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=8509661fc7b10bf2da4ed1d229ce43c06f09962ab70ea31714460255173654faa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2219HQXTDFFStWMcIULKmIxnBul8veM_Fs%22%3B%7D; PHPSESSID=imnelp8ch6m4rmddikeakrpej0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'yii2.vova.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2.vova.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2.vova.com/backend/web/index.php'
+    'REMOTE_PORT' => '41630'
+    'REDIRECT_QUERY_STRING' => 'name=deleteUsers'
+    'REDIRECT_URL' => '/backend/web/rbac/permissions/update/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'name=deleteUsers'
+    'REQUEST_URI' => '/backend/rbac/permissions/update/?name=deleteUsers'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434446448.9
+    'REQUEST_TIME' => 1434446448
+    'argv' => [
+        0 => 'name=deleteUsers'
+    ]
+    'argc' => 1
+]
+2015-06-16 12:24:00 [127.0.0.1][1][imnelp8ch6m4rmddikeakrpej0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Module' not found' in C:\OpenServer\domains\yii2.vova.com\vendor\core\Yii2-test-rbac-module\views\backend\rules\index.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-06-16 12:24:00 [127.0.0.1][1][imnelp8ch6m4rmddikeakrpej0][info][application] $_COOKIE = [
+    '_csrf' => '8509661fc7b10bf2da4ed1d229ce43c06f09962ab70ea31714460255173654faa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"19HQXTDFFStWMcIULKmIxnBul8veM_Fs\";}'
+    'PHPSESSID' => 'imnelp8ch6m4rmddikeakrpej0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.vova.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii2.vova.com/backend/rbac/permissions/index/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=8509661fc7b10bf2da4ed1d229ce43c06f09962ab70ea31714460255173654faa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2219HQXTDFFStWMcIULKmIxnBul8veM_Fs%22%3B%7D; PHPSESSID=imnelp8ch6m4rmddikeakrpej0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'yii2.vova.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2.vova.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2.vova.com/backend/web/index.php'
+    'REMOTE_PORT' => '41731'
+    'REDIRECT_URL' => '/backend/web/rbac/rules/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/rbac/rules/index/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434446640.098
+    'REQUEST_TIME' => 1434446640
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 12:24:53 [127.0.0.1][1][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: C:\OpenServer\domains\yii2.vova.com\vendor\core\Yii2-test-rbac-module\views\backend\rules\index.php' in C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(core\rbac\controllers\backend\RulesController))
+#1 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('index', Array, Object(core\rbac\controllers\backend\RulesController))
+#2 C:\OpenServer\domains\yii2.vova.com\vendor\core\Yii2-test-rbac-module\controllers\backend\RulesController.php(74): yii\base\Controller->render('index', Array)
+#3 [internal function]: core\rbac\controllers\backend\RulesController->actionIndex()
+#4 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#7 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('rbac/rules/inde...', Array)
+#8 C:\OpenServer\domains\yii2.vova.com\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\OpenServer\domains\yii2.vova.com\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2015-06-16 12:24:53 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '8509661fc7b10bf2da4ed1d229ce43c06f09962ab70ea31714460255173654faa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"19HQXTDFFStWMcIULKmIxnBul8veM_Fs\";}'
+    'PHPSESSID' => 'imnelp8ch6m4rmddikeakrpej0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii2.vova.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://yii2.vova.com/backend/rbac/permissions/index/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=8509661fc7b10bf2da4ed1d229ce43c06f09962ab70ea31714460255173654faa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2219HQXTDFFStWMcIULKmIxnBul8veM_Fs%22%3B%7D; PHPSESSID=imnelp8ch6m4rmddikeakrpej0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'yii2.vova.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/yii2.vova.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/yii2.vova.com/backend/web/index.php'
+    'REMOTE_PORT' => '41769'
+    'REDIRECT_URL' => '/backend/web/rbac/rules/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/rbac/rules/index/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434446693.516
+    'REQUEST_TIME' => 1434446693
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 13:46:33 [127.0.0.1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\base\Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#8 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('admin/default/i...', Array)
+#9 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\OpenServer\domains\test.yii2.com\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2015-06-16 13:46:33 [127.0.0.1][2][-][info][application] $_COOKIE = [
+    '_identity' => 'f32a6d4340070408bb90eb64d5088e9911528a217db0e55a9e6e126ac4fe83a0a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"3\",\"msncY8uHglwSMg1Aed76CHGTv3UnipxW\",2592000]\";}'
+    '_csrf' => 'acfad03e6f4703d8cb04266d4b3c615a0a0459d977fe3fd3b2c5df1104b1ef43a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vm6WmzAUH51ufiCNXcVFgvxUChQ98lM_\";}'
+    'PHPSESSID' => 'a2pmge43i88doiklb8dn7gfip6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'test.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_identity=f32a6d4340070408bb90eb64d5088e9911528a217db0e55a9e6e126ac4fe83a0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%223%22%2C%22msncY8uHglwSMg1Aed76CHGTv3UnipxW%22%2C2592000%5D%22%3B%7D; _csrf=acfad03e6f4703d8cb04266d4b3c615a0a0459d977fe3fd3b2c5df1104b1ef43a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vm6WmzAUH51ufiCNXcVFgvxUChQ98lM_%22%3B%7D; PHPSESSID=a2pmge43i88doiklb8dn7gfip6'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'test.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/test.yii2.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/test.yii2.com/backend/web/index.php'
+    'REMOTE_PORT' => '43408'
+    'REDIRECT_URL' => '/backend/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434451593.073
+    'REQUEST_TIME' => 1434451593
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 13:46:37 [127.0.0.1][2][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\base\Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#8 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('users/default/u...', Array)
+#9 C:\OpenServer\domains\test.yii2.com\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\OpenServer\domains\test.yii2.com\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2015-06-16 13:46:37 [127.0.0.1][2][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_identity' => 'f32a6d4340070408bb90eb64d5088e9911528a217db0e55a9e6e126ac4fe83a0a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"3\",\"msncY8uHglwSMg1Aed76CHGTv3UnipxW\",2592000]\";}'
+    'PHPSESSID' => 'a2pmge43i88doiklb8dn7gfip6'
+    '_csrf' => 'a286934cdcd5a805553fdd63b45f79a0746cbf4909e6b3af9d76b26297bb15a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"mAMTjaril2X7WDaWsUFjM3Rid27kgfn_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'test.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://test.yii2.com/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_identity=f32a6d4340070408bb90eb64d5088e9911528a217db0e55a9e6e126ac4fe83a0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%223%22%2C%22msncY8uHglwSMg1Aed76CHGTv3UnipxW%22%2C2592000%5D%22%3B%7D; PHPSESSID=a2pmge43i88doiklb8dn7gfip6; _csrf=a286934cdcd5a805553fdd63b45f79a0746cbf4909e6b3af9d76b26297bb15a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22mAMTjaril2X7WDaWsUFjM3Rid27kgfn_%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'test.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/test.yii2.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/test.yii2.com/backend/web/index.php'
+    'REMOTE_PORT' => '43408'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => '/backend/web/users/default/update/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/backend/users/default/update/?id=2'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434451597.123
+    'REQUEST_TIME' => 1434451597
+    'argv' => [
+        0 => 'id=2'
+    ]
+    'argc' => 1
+]
+2015-06-16 16:58:07 [127.0.0.1][-][qmbagim6r7mpfsrfulflqj8dd4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Access to undeclared static property: core\users\models\User::$users' in C:\OpenServer\domains\test.yii2.com\vendor\core\yii2-users-module\models\User.php:74
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-06-16 16:58:07 [127.0.0.1][-][qmbagim6r7mpfsrfulflqj8dd4][info][application] $_COOKIE = [
+    '_identity' => 'f32a6d4340070408bb90eb64d5088e9911528a217db0e55a9e6e126ac4fe83a0a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"3\",\"msncY8uHglwSMg1Aed76CHGTv3UnipxW\",2592000]\";}'
+    '_csrf' => 'edc9c035eb54d82c34771e2283658f2de1f16e597a5cfe12686950e57c380f5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vUPo0sj-xmOLhT9Ddy5A7Yd_IXJiNxFu\";}'
+    'PHPSESSID' => 'qmbagim6r7mpfsrfulflqj8dd4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__captcha/site/default/captcha' => 'tersbvs'
+    '__captcha/site/default/captchacount' => 1
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'test.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://test.yii2.com/backend/users/default/index/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_identity=f32a6d4340070408bb90eb64d5088e9911528a217db0e55a9e6e126ac4fe83a0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%223%22%2C%22msncY8uHglwSMg1Aed76CHGTv3UnipxW%22%2C2592000%5D%22%3B%7D; _csrf=edc9c035eb54d82c34771e2283658f2de1f16e597a5cfe12686950e57c380f5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vUPo0sj-xmOLhT9Ddy5A7Yd_IXJiNxFu%22%3B%7D; PHPSESSID=qmbagim6r7mpfsrfulflqj8dd4'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'test.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/test.yii2.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/test.yii2.com/backend/web/index.php'
+    'REMOTE_PORT' => '48158'
+    'REDIRECT_URL' => '/backend/web/login/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/login/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434463087.375
+    'REQUEST_TIME' => 1434463087
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 16:58:07 [127.0.0.1][-][qmbagim6r7mpfsrfulflqj8dd4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Access to undeclared static property: core\users\models\User::$users' in C:\OpenServer\domains\test.yii2.com\vendor\core\yii2-users-module\models\User.php:74
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-06-16 16:58:07 [127.0.0.1][-][qmbagim6r7mpfsrfulflqj8dd4][info][application] $_COOKIE = [
+    '_identity' => 'f32a6d4340070408bb90eb64d5088e9911528a217db0e55a9e6e126ac4fe83a0a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"3\",\"msncY8uHglwSMg1Aed76CHGTv3UnipxW\",2592000]\";}'
+    '_csrf' => 'edc9c035eb54d82c34771e2283658f2de1f16e597a5cfe12686950e57c380f5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vUPo0sj-xmOLhT9Ddy5A7Yd_IXJiNxFu\";}'
+    'PHPSESSID' => 'qmbagim6r7mpfsrfulflqj8dd4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__captcha/site/default/captcha' => 'tersbvs'
+    '__captcha/site/default/captchacount' => 1
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'test.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://test.yii2.com/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_identity=f32a6d4340070408bb90eb64d5088e9911528a217db0e55a9e6e126ac4fe83a0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%223%22%2C%22msncY8uHglwSMg1Aed76CHGTv3UnipxW%22%2C2592000%5D%22%3B%7D; _csrf=edc9c035eb54d82c34771e2283658f2de1f16e597a5cfe12686950e57c380f5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vUPo0sj-xmOLhT9Ddy5A7Yd_IXJiNxFu%22%3B%7D; PHPSESSID=qmbagim6r7mpfsrfulflqj8dd4'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'test.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/test.yii2.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/test.yii2.com/backend/web/index.php'
+    'REMOTE_PORT' => '48159'
+    'REDIRECT_URL' => '/backend/web/users/default/index/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/users/default/index/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434463087.543
+    'REQUEST_TIME' => 1434463087
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 16:58:07 [127.0.0.1][-][qmbagim6r7mpfsrfulflqj8dd4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Access to undeclared static property: core\users\models\User::$users' in C:\OpenServer\domains\test.yii2.com\vendor\core\yii2-users-module\models\User.php:74
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-06-16 16:58:07 [127.0.0.1][-][qmbagim6r7mpfsrfulflqj8dd4][info][application] $_COOKIE = [
+    '_identity' => 'f32a6d4340070408bb90eb64d5088e9911528a217db0e55a9e6e126ac4fe83a0a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"3\",\"msncY8uHglwSMg1Aed76CHGTv3UnipxW\",2592000]\";}'
+    '_csrf' => 'edc9c035eb54d82c34771e2283658f2de1f16e597a5cfe12686950e57c380f5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vUPo0sj-xmOLhT9Ddy5A7Yd_IXJiNxFu\";}'
+    'PHPSESSID' => 'qmbagim6r7mpfsrfulflqj8dd4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__captcha/site/default/captcha' => 'tersbvs'
+    '__captcha/site/default/captchacount' => 1
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'test.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_REFERER' => 'http://test.yii2.com/backend/login/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_identity=f32a6d4340070408bb90eb64d5088e9911528a217db0e55a9e6e126ac4fe83a0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%223%22%2C%22msncY8uHglwSMg1Aed76CHGTv3UnipxW%22%2C2592000%5D%22%3B%7D; _csrf=edc9c035eb54d82c34771e2283658f2de1f16e597a5cfe12686950e57c380f5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vUPo0sj-xmOLhT9Ddy5A7Yd_IXJiNxFu%22%3B%7D; PHPSESSID=qmbagim6r7mpfsrfulflqj8dd4'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'test.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/test.yii2.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/test.yii2.com/backend/web/index.php'
+    'REMOTE_PORT' => '48160'
+    'REDIRECT_URL' => '/backend/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434463087.846
+    'REQUEST_TIME' => 1434463087
+    'argv' => []
+    'argc' => 0
+]
+2015-06-16 16:58:08 [127.0.0.1][-][qmbagim6r7mpfsrfulflqj8dd4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Access to undeclared static property: core\users\models\User::$users' in C:\OpenServer\domains\test.yii2.com\vendor\core\yii2-users-module\models\User.php:74
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-06-16 16:58:08 [127.0.0.1][-][qmbagim6r7mpfsrfulflqj8dd4][info][application] $_COOKIE = [
+    '_identity' => 'f32a6d4340070408bb90eb64d5088e9911528a217db0e55a9e6e126ac4fe83a0a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"3\",\"msncY8uHglwSMg1Aed76CHGTv3UnipxW\",2592000]\";}'
+    '_csrf' => 'edc9c035eb54d82c34771e2283658f2de1f16e597a5cfe12686950e57c380f5ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vUPo0sj-xmOLhT9Ddy5A7Yd_IXJiNxFu\";}'
+    'PHPSESSID' => 'qmbagim6r7mpfsrfulflqj8dd4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/'
+    '__captcha/site/default/captcha' => 'tersbvs'
+    '__captcha/site/default/captchacount' => 1
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'test.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_identity=f32a6d4340070408bb90eb64d5088e9911528a217db0e55a9e6e126ac4fe83a0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%223%22%2C%22msncY8uHglwSMg1Aed76CHGTv3UnipxW%22%2C2592000%5D%22%3B%7D; _csrf=edc9c035eb54d82c34771e2283658f2de1f16e597a5cfe12686950e57c380f5ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vUPo0sj-xmOLhT9Ddy5A7Yd_IXJiNxFu%22%3B%7D; PHPSESSID=qmbagim6r7mpfsrfulflqj8dd4'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.py;.pyw'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'test.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/test.yii2.com'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/test.yii2.com/backend/web/index.php'
+    'REMOTE_PORT' => '48161'
+    'REDIRECT_URL' => '/backend/web/login/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/login/'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1434463088.224
+    'REQUEST_TIME' => 1434463088
+    'argv' => []
+    'argc' => 0
+]
